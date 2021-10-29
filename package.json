@@ -1,0 +1,29 @@
+{
+  "name": "@vjcspy/ui-extension",
+  "version": "1.0.0",
+  "description": "UI Extension module",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "module": "build/module/index.js",
+  "repository": "https://github.com/vjcspy/web-ui-extension",
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "describe": "npm-scripts-info",
+    "build": "yarn run build:main && yarn run build:module",
+    "build:main": "tsc -p tsconfig.json",
+    "build:module": "tsc -p tsconfig.module.json",
+    "watch": "tsc -p tsconfig.json -w",
+    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('web-ui must be installed with Yarn: https://yarnpkg.com/')\""
+  },
+  "engines": {
+    "node": ">=15.11"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.176",
+    "@types/react": "^17.0.33",
+    "immutable": "latest",
+    "lodash": "latest",
+    "react": "latest"
+  }
+}

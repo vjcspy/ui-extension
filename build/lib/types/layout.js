@@ -1,0 +1,19 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ExtensionCustomizeType = exports.ExtensionType = void 0;
+var ExtensionType;
+(function (ExtensionType) {
+    ExtensionType[ExtensionType["ROOT"] = 0] = "ROOT";
+    ExtensionType[ExtensionType["HEAD"] = 1] = "HEAD";
+    ExtensionType[ExtensionType["HEAD_COMPONENT"] = 2] = "HEAD_COMPONENT";
+    ExtensionType[ExtensionType["COMPONENT"] = 3] = "COMPONENT";
+})(ExtensionType = exports.ExtensionType || (exports.ExtensionType = {}));
+var ExtensionCustomizeType;
+(function (ExtensionCustomizeType) {
+    ExtensionCustomizeType[ExtensionCustomizeType["FIX"] = 0] = "FIX";
+    ExtensionCustomizeType[ExtensionCustomizeType["HOOK"] = 1] = "HOOK";
+    ExtensionCustomizeType[ExtensionCustomizeType["CAN_PUSH"] = 2] = "CAN_PUSH";
+    ExtensionCustomizeType[ExtensionCustomizeType["CAN_REMOVE"] = 3] = "CAN_REMOVE";
+    ExtensionCustomizeType[ExtensionCustomizeType["CAN_PUSH_REMOVE"] = 4] = "CAN_PUSH_REMOVE";
+})(ExtensionCustomizeType = exports.ExtensionCustomizeType || (exports.ExtensionCustomizeType = {}));
+//# sourceMappingURL=layout.js.map
